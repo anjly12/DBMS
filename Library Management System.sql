@@ -57,3 +57,6 @@ create table LATE_FEE_RULE(
                            ToDays date,
                            Amount int,
                            primary key(FromDays,ToDays)); 
+alter table Book Add Publisher varchar(10);      
+alter table Member modify Branch_Code int;
+rename LATE_FEE_RULE to FINE_TABLE;
